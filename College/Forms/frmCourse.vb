@@ -72,7 +72,7 @@ Public Class frmCourse
     End Sub
 
     Private Sub btnView_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnView.Click
-        frmRptCourses.Show()
+        '  frmRptCourses.Show()
     End Sub
 
     Private Sub delete()

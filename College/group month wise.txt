@@ -1,0 +1,9 @@
+SELECT        MONTH(trans_date) AS month, YEAR(trans_date) AS year, 0 AS debit, SUM(Amount) AS credit
+FROM            account_trans
+WHERE        (creditid = 1)
+GROUP BY YEAR(trans_date), MONTH(trans_date)
+union all
+SELECT        MONTH(trans_date) AS month, YEAR(trans_date) AS year, SUM(Amount) AS debit, 0 AS credit
+FROM            account_trans
+WHERE        (debitid = 1)
+GROUP BY YEAR(trans_date), MONTH(trans_date)

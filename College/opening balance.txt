@@ -1,0 +1,7 @@
+select ac.opbalance+balance as openingbalance from (select sum(credit) as credit,sum(debit) as debit,sum(debit)-sum(credit) as balance from (SELECT   SUM(Amount) AS credit, 0 AS debit
+FROM            account_trans
+WHERE        (creditid =1) and trans_date <"2016-2-31"
+union all
+SELECT        0 AS credit, SUM(Amount) AS debit
+FROM            account_trans
+WHERE        (debitid=1) and trans_date<"2016-2-31") t) t1,account_group ac where ac.accountid=1;

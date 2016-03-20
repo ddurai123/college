@@ -1,0 +1,8 @@
+feesbalance as SELECT        student.Regno, student.StudentName, fees.Semname, fees.Fees, IFNULL(SUM(payment.Amount), 0) AS amount, IFNULL(discounts.Discount, 0) AS discount, 
+                         fees.Fees - IFNULL(SUM(payment.Amount), 0) - IFNULL(discounts.Discount, 0) AS balance, class_view.Course, class_view.Department
+FROM            fees INNER JOIN
+                         student ON fees.Feesid = student.FeesId INNER JOIN
+                         class_view ON fees.Courseid = class_view.Courseid LEFT OUTER JOIN
+                         discounts ON fees.SemId = discounts.SemId AND student.Studentid = discounts.Studentid LEFT OUTER JOIN
+                         payment ON student.Studentid = payment.StudentId AND fees.amtid = payment.amtid
+GROUP BY fees.amtid, student.Studentid, payment.amtid

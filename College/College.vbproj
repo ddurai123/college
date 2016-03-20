@@ -1,0 +1,644 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B9CAB5FA-C67F-4EE3-BCB8-AC3174DAA7D4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>College.CollegeMDI</StartupObject>
+    <RootNamespace>College</RootNamespace>
+    <AssemblyName>College</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\cl7\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>College.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>College.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>College.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\College.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>College.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\College.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>1F1A3BC8E1E6076A3C90BFD726D0C93553A40AD1</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>College_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.9.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 6.9.5\Assemblies\v4.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\SuperMarket\SuperMarket\bin\Debug\MySql.Data.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="collegeDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>collegeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="collegeDataSet.vb">
+      <DependentUpon>collegeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="collegemd.vb" />
+    <Compile Include="CollegeMDI.Designer.vb">
+      <DependentUpon>CollegeMDI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CollegeMDI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmBatch.Designer.vb">
+      <DependentUpon>frmBatch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmBatch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmContraVoucher.Designer.vb">
+      <DependentUpon>frmContraVoucher.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmContraVoucher.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCourse.Designer.vb">
+      <DependentUpon>frmCourse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCourse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDailyCollection.Designer.vb">
+      <DependentUpon>frmDailyCollection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDailyCollection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDepartment.Designer.vb">
+      <DependentUpon>frmDepartment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDepartment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDiscounts.Designer.vb">
+      <DependentUpon>frmDiscounts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDiscounts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmEditStudentAccount.Designer.vb">
+      <DependentUpon>frmEditStudentAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmEditStudentAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmFeesBalance.Designer.vb">
+      <DependentUpon>frmFeesBalance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmFeesBalance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmFeesBalanceS.Designer.vb">
+      <DependentUpon>frmFeesBalanceS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmFeesBalanceS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmFeesFollowed.Designer.vb">
+      <DependentUpon>frmFeesFollowed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmFeesFollowed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmFeesIdSearch.Designer.vb">
+      <DependentUpon>frmFeesIdSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmFeesIdSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmFeesStructure.Designer.vb">
+      <DependentUpon>frmFeesStructure.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmFeesStructure.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLedger.designer.vb">
+      <DependentUpon>frmLedger.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLedger.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLedgerEdit.Designer.vb">
+      <DependentUpon>frmLedgerEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLedgerEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLedgerSearch.Designer.vb">
+      <DependentUpon>frmLedgerSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLedgerSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPayVoucher.Designer.vb">
+      <DependentUpon>frmPayVoucher.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPayVoucher.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmReceiptVoucher.Designer.vb">
+      <DependentUpon>frmReceiptVoucher.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmReceiptVoucher.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmRegister.Designer.vb">
+      <DependentUpon>frmRegister.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmRegister.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRptStudent.Designer.vb">
+      <DependentUpon>frmRptStudent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRptStudent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmAccountDaily.Designer.vb">
+      <DependentUpon>frmAccountDaily.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmAccountDaily.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmrptDailyAccount.Designer.vb">
+      <DependentUpon>frmrptDailyAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmrptDailyAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRptFeesBalance.Designer.vb">
+      <DependentUpon>frmRptFeesBalance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRptFeesBalance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSearchDepartment.Designer.vb">
+      <DependentUpon>frmSearchDepartment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSearchDepartment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSemesters.Designer.vb">
+      <DependentUpon>frmSemesters.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSemesters.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmStudent.Designer.vb">
+      <DependentUpon>frmStudent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmStudent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmStudentFees.Designer.vb">
+      <DependentUpon>frmStudentFees.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmStudentFees.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmStudentSearch.Designer.vb">
+      <DependentUpon>frmStudentSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmStudentSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginForm1.Designer.vb">
+      <DependentUpon>LoginForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoginForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSearchPayments.Designer.vb">
+      <DependentUpon>frmSearchPayments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSearchPayments.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmrptFeesBalanceDetailed.Designer.vb">
+      <DependentUpon>frmrptFeesBalanceDetailed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmrptFeesBalanceDetailed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Reports\frmAccountMonthwise.Designer.vb">
+      <DependentUpon>frmAccountMonthwise.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmAccountMonthwise.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRptAccount.Designer.vb">
+      <DependentUpon>frmRptAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRptAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRptCourses.Designer.vb">
+      <DependentUpon>frmRptCourses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRptCourses.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRptDailyCollection.Designer.vb">
+      <DependentUpon>frmRptDailyCollection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRptDailyCollection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRptStudentAccount.Designer.vb">
+      <DependentUpon>frmRptStudentAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRptStudentAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmStudentReport.Designer.vb">
+      <DependentUpon>frmStudentReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmStudentReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\frmContraVoucher.resx">
+      <DependentUpon>frmContraVoucher.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRptStudent.resx">
+      <DependentUpon>frmRptStudent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmStudentReport.resx">
+      <DependentUpon>frmStudentReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="Reports\rptStudents.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Reports\frmAccountDaily.resx">
+      <DependentUpon>frmAccountDaily.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmrptDailyAccount.resx">
+      <DependentUpon>frmrptDailyAccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="Reports\rptDailyAccount.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\wet.jpg" />
+    <EmbeddedResource Include="Forms\frmEditStudentAccount.resx">
+      <DependentUpon>frmEditStudentAccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLedger.resx">
+      <DependentUpon>frmLedger.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLedgerEdit.resx">
+      <DependentUpon>frmLedgerEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmReceiptVoucher.resx">
+      <DependentUpon>frmReceiptVoucher.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmrptFeesBalanceDetailed.resx">
+      <DependentUpon>frmrptFeesBalanceDetailed.vb</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="Reports\rptFeesBalanceDetailed.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\gmail.png" />
+    <None Include="Resources\wait01.gif" />
+    <None Include="Resources\wait1.gif" />
+    <None Include="Resources\Processing.gif" />
+    <EmbeddedResource Include="Forms\frmDailyCollection.resx">
+      <DependentUpon>frmDailyCollection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLedgerSearch.resx">
+      <DependentUpon>frmLedgerSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPayVoucher.resx">
+      <DependentUpon>frmPayVoucher.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSearchPayments.resx">
+      <DependentUpon>frmSearchPayments.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmAccountMonthwise.resx">
+      <DependentUpon>frmAccountMonthwise.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRptAccount.resx">
+      <DependentUpon>frmRptAccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRptDailyCollection.resx">
+      <DependentUpon>frmRptDailyCollection.vb</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="Reports\rptDailyCollection.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\rptAccount.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\save %281%29.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\old_zoom_original %281%29.png" />
+    <None Include="Resources\old_zoom_original.png" />
+    <None Include="Resources\edit_find %282%29.png" />
+    <None Include="Resources\edit_find %281%29.png" />
+    <None Include="Resources\edit_find.png" />
+    <None Include="Resources\download.jpg" />
+    <EmbeddedResource Include="Forms\frmDiscounts.resx">
+      <DependentUpon>frmDiscounts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSearchDepartment.resx">
+      <DependentUpon>frmSearchDepartment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRptStudentAccount.resx">
+      <DependentUpon>frmRptStudentAccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="Reports\rptStudentAccount.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\gr2.jpg" />
+    <None Include="Resources\gr11.jpg" />
+    <None Include="Resources\gr1.jpg" />
+    <EmbeddedResource Include="CollegeMDI.resx">
+      <DependentUpon>CollegeMDI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmBatch.resx">
+      <DependentUpon>frmBatch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCourse.resx">
+      <DependentUpon>frmCourse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDepartment.resx">
+      <DependentUpon>frmDepartment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmFeesBalance.resx">
+      <DependentUpon>frmFeesBalance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmFeesBalanceS.resx">
+      <DependentUpon>frmFeesBalanceS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmFeesFollowed.resx">
+      <DependentUpon>frmFeesFollowed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmFeesIdSearch.resx">
+      <DependentUpon>frmFeesIdSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmFeesStructure.resx">
+      <DependentUpon>frmFeesStructure.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmRegister.resx">
+      <DependentUpon>frmRegister.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRptFeesBalance.resx">
+      <DependentUpon>frmRptFeesBalance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSemesters.resx">
+      <DependentUpon>frmSemesters.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmStudent.resx">
+      <DependentUpon>frmStudent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmStudent.ta-IN.resx">
+      <DependentUpon>frmStudent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmStudentFees.resx">
+      <DependentUpon>frmStudentFees.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmStudentSearch.resx">
+      <DependentUpon>frmStudentSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="Reports\rptFeesBalance.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Forms\LoginForm1.resx">
+      <DependentUpon>LoginForm1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRptCourses.resx">
+      <DependentUpon>frmRptCourses.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Report1.rdlc" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="collegeDataSet.xsc">
+      <DependentUpon>collegeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="collegeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>collegeDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="collegeDataSet.xss">
+      <DependentUpon>collegeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="College_TemporaryKey.pfx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wait.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading45.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Microsoft.ReportViewer.Common">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.DataVisualization">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="MySql.Data">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
